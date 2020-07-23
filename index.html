@@ -5,66 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Social Media Dashboard</title>
   </head>
   <body>
     <header>
-      <div>
+      <div class="container__title">
         <h1>Social Media Dashboard</h1>
         <p>Total Followers: 23,004</p>
       </div>
-      <div>
-        Dark Mode
+      <div class="container__theme-switch">
+        <p>Dark Mode</p>
       </div>
     </header>
     <main>
-      <section>
-        <div>
-          <div>
-            <img src="./assets/images/icon-facebook.svg" alt="Facebook Logo" />
+      <section class="global-results">
+        <div class="card card__border-fb">
+          <div class="card__user-name">
+            <figure><img src="./assets/images/icon-facebook.svg" alt="Facebook Logo" /></figure>
             <p>@nathanf</p>
           </div>
-          <p>1987</p>
-          <p>FOLLOWERS</p>
-          <div>
-            <img src="./assets/images/icon-up.svg" alt="icon up" />
-            <p>12 Today</p>
+          <p class="total-number">1987</p>
+          <p class="followers-title">FOLLOWERS</p>
+          <div class="total-percentage percentage-up">
+            <p>
+              <span><img src="./assets/images/icon-up.svg" alt="icon up" /></span> 12 Today
+            </p>
           </div>
         </div>
-        <div>
-          <div>
-            <img src="./assets/images/icon-twitter.svg" alt="Twitter Logo" />
+        <div class="card card__border-tw">
+          <div class="card__user-name">
+            <figure><img src="./assets/images/icon-twitter.svg" alt="Twitter Logo" /></figure>
             <p>@nathanf</p>
           </div>
-          <p>1044</p>
-          <p>FOLLOWERS</p>
-          <div>
-            <img src="./assets/images/icon-up.svg" alt="icon up" />
-            <p>99 Today</p>
+          <p class="total-number">1044</p>
+          <p class="followers-title">FOLLOWERS</p>
+          <div class="total-percentage percentage-up">
+            <p>
+              <span><img src="./assets/images/icon-up.svg" alt="icon up" /></span> 99 Today
+            </p>
           </div>
         </div>
-        <div>
-          <div>
-            <img src="./assets/images/icon-instagram.svg" alt="Instagram Logo" />
+        <div class="card card_border-inst">
+          <div class="card__user-name">
+            <figure><img src="./assets/images/icon-instagram.svg" alt="Instagram Logo" /></figure>
             <p>@reaknathanf</p>
           </div>
-          <p>11K</p>
-          <p>FOLLOWERS</p>
-          <div>
-            <img src="./assets/images/icon-up.svg" alt="icon up" />
-            <p>1099 Today</p>
+          <p class="total-number">11k</p>
+          <p class="followers-title">FOLLOWERS</p>
+          <div class="total-percentage percentage-up">
+            <p>
+              <span><img src="./assets/images/icon-up.svg" alt="icon up" /></span> 1099 Today
+            </p>
           </div>
         </div>
-        <div>
-          <div>
-            <img src="./assets/images/icon-youtube.svg" alt="YouTube Logo" />
+        <div class="card card__border-yt">
+          <div class="card__user-name">
+            <figure><img src="./assets/images/icon-youtube.svg" alt="YouTube Logo" /></figure>
             <p>Nathan F.</p>
           </div>
-          <p>8239</p>
-          <p>SUBSCRIBERS</p>
-          <div>
-            <img src="./assets/images/icon-down.svg" alt="icon down" />
-            <p>144 Today</p>
+          <p class="total-number">8239</p>
+          <p class="followers-title">SUBSCRIBERS</p>
+          <div class="total-percentage percentage-down">
+            <p>
+              <span><img src="./assets/images/icon-down.svg" alt="icon down" /></span> 144 Today
+            </p>
           </div>
         </div>
       </section>
@@ -168,7 +174,6 @@
         </div>
       </section>
     </main>
-
     <footer>
       <div class="attribution">Coded by <a href="#">Andrés Moreno</a></div>
     </footer>
