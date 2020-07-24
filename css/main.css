@@ -202,7 +202,7 @@ figure {
 }
 
 footer {
-  background-color: var(--lime-green);
+  background-color: var(--very-dark-blue-BG);
   position: relative;
   top: 0;
   bottom: 0;
@@ -229,7 +229,7 @@ footer .attribution {
 }
 
 .attribution a:hover {
-  color: var(--very-dark-blue-BG);
+  color: var(--lime-green);
 }
 
 @media (max-width: 375px) {
