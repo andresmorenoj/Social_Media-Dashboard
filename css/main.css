@@ -25,6 +25,18 @@
   --dark-grayish-blue-text: hsl(228, 12%, 44%);
   --very-dark-blue-text: hsl(230, 17%, 14%);
   /*----------*/
+
+  --darkpink: #ed405a;
+  --lightyellow: #f7a757;
+  --mountaincolor: #460c00;
+  --dark: 0.4;
+  --darker: 0.3;
+  --darkest: 0.2;
+  --darkmostdarkest: 0.25;
+  --circlecolor: rgb(230, 222, 222);
+  --nevyblue: #10111d;
+  --lightblue: #22628d;
+  --white: #fff;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
@@ -111,6 +123,7 @@ figure {
 .percentage-up {
   color: var(--lime-green);
 }
+
 .percentage-down {
   color: var(--bright-red);
 }
@@ -151,17 +164,47 @@ figure {
   margin-bottom: 2px;
 }
 
+footer {
+  background-color: var(--lime-green);
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 50px;
+  margin: 0;
+}
+
+footer .attribution {
+  text-align: center;
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.attribution a:hover {
+  color: var(--very-dark-blue-BG);
+}
+
 @media (max-width: 375px) {
   body {
-    padding: 0 0 10px;
+    padding: 0;
   }
 
   header {
-    padding: 40px 25px;
+    padding: 40px 25px 40px;
     font-size: 13px;
     border-radius: 0px 0px 25px 25px;
-    padding-bottom: 50px;
-    height: 290px;
+    height: 300px;
     width: 100%;
   }
 
