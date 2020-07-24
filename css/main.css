@@ -72,6 +72,7 @@ h3 {
   margin: 0;
   font-family: "Inter", sans-serif;
   color: var(--dark-grayish-blue-text);
+  font-size: 1.5em;
 }
 
 .container__title p {
@@ -156,10 +157,22 @@ figure {
   margin-bottom: 2px;
 }
 
+.overview-results {
+  position: relative;
+  bottom: 0;
+  top: -50px;
+}
+
+.card-2__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
 .card-2 {
   background-color: var(--light-grayish-blue-card-BG);
   border-radius: 5px;
-  padding: 10% 0 2%;
   font-family: "Inter", sans-serif;
   padding: 10px 15px;
 }
@@ -237,6 +250,7 @@ footer .attribution {
 
   h3 {
     margin-left: 25px;
+    font-size: 1.2em;
   }
 
   .global-results {
@@ -261,12 +275,8 @@ footer .attribution {
     padding: 10% 0 2%;
   }
 
-  .overview-results {
-    margin-top: -50px;
-  }
-
-  .overview-results div:first-of-type {
-    margin-top: 30px;
+  .card-2__container {
+    display: block;
   }
 
   .card-2 {
