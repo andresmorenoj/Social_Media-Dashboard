@@ -54,11 +54,6 @@ h3 {
   color: var(--dark-grayish-blue-text);
 }
 
-.global-results {
-  position: relative;
-  top: -70px;
-}
-
 .card {
   background-color: var(--light-grayish-blue-card-BG);
   border-radius: 5px;
@@ -82,7 +77,6 @@ h3 {
   border-bottom: none;
   border-right: none;
   border-left: none;
-  /* border-image: gradient(linear, 0 100%, 0 0, from hsl(37, 97%, 70%), to hsl(329, 70%, 58%)); */
 }
 
 .card__border-yt {
@@ -175,6 +169,12 @@ figure {
     margin-left: 25px;
   }
 
+  .global-results {
+    position: relative;
+    top: -70px;
+    bottom: 0;
+  }
+
   .container__title p {
     font-size: 16px;
   }
@@ -187,6 +187,14 @@ figure {
   .card {
     width: 85vw;
     margin: 0 auto 25px;
+  }
+
+  .overview-results {
+    margin-top: -50px;
+  }
+
+  .overview-results div:first-of-type {
+    margin-top: 30px;
   }
 
   .card-2 {
