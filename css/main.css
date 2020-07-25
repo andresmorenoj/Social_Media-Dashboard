@@ -1,5 +1,5 @@
 :root {
-  /* Primari colors */
+  /* Primary colors */
   --lime-green: hsl(163, 72%, 41%);
   --bright-red: rgb(220, 65, 76);
   /*----------*/
@@ -40,6 +40,61 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+/* Button color swich */
+
+.theme-switch__input,
+.theme-switch__label {
+  position: absolute;
+  z-index: 1;
+}
+
+.theme-switch__label {
+  padding: 10px;
+  transition: background-color 200ms ease-in-out;
+  width: 50px;
+  height: 5px;
+  border-radius: 50px;
+  text-align: center;
+  background-color: slateGray;
+  box-shadow: -4px 4px 15px inset rgba(0, 0, 0, 0.4);
+}
+
+.theme-switch__label span {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 20px;
+  width: 100%;
+}
+.theme-switch__label span::after {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: -15px;
+  width: 15px;
+  height: 15px;
+  content: "";
+  border-radius: 50%;
+  background-color: lightBlue;
+  transition: transform 200ms, background-color 200ms;
+  box-shadow: -3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.theme-switch__input:checked ~ header {
+  --very-pale-blue-top-BG-pattern: hsl(232, 19%, 15%);
+  --very-dark-blue-text: white;
+  --dark-grayish-blue-text: hsl(228, 34%, 66%);
+}
+
+.theme-switch__input:checked ~ section {
+  --light-grayish-blue-card-BG: hsl(228, 28%, 20%);
+  --dark-grayish-blue-text: hsl(228, 34%, 66%);
+  --very-dark-blue-text: white;
+  /* --dark-grayish-blue-text: white; */
+  background-color: var(--very-dark-blue-BG);
+}
+
+.theme-switch__input:checked ~ .theme-switch__label span::after {
+  transform: translateX(25px);
+}
 
 body {
   background-color: var(--white);
@@ -58,6 +113,11 @@ header {
 
 main {
   width: 100%;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+section {
   padding-left: 150px;
   padding-right: 150px;
 }
@@ -88,10 +148,12 @@ h3 {
   position: relative;
   top: -110px;
   bottom: 0;
+  height: 350px;
 }
 
 .card {
   width: 100%;
+  max-height: 230px;
   background-color: var(--light-grayish-blue-card-BG);
   border-radius: 5px;
   display: flex;
@@ -160,7 +222,7 @@ figure {
 .overview-results {
   position: relative;
   bottom: 0;
-  top: -50px;
+  top: -110px;
 }
 
 .card-2__container {
@@ -242,6 +304,12 @@ footer .attribution {
     padding: 40px 25px 40px;
     height: 300px;
     display: block;
+    width: 100%;
+  }
+
+  section {
+    width: 100%;
+    padding: 0;
   }
 
   main {
@@ -257,6 +325,7 @@ footer .attribution {
     display: block;
     top: -70px;
     bottom: 0;
+    height: 100%;
   }
 
   .container__title p {
@@ -273,6 +342,11 @@ footer .attribution {
     width: 85vw;
     margin: 0 auto 25px;
     padding: 10% 0 2%;
+    max-height: 330px;
+  }
+
+  .overview-results {
+    top: 0px;
   }
 
   .card-2__container {

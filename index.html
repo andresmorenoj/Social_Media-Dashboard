@@ -10,6 +10,10 @@
     <title>Social Media Dashboard</title>
   </head>
   <body>
+    <input type="checkbox" id="themeSwitch" class="theme-switch__input" />
+    <label for="themeSwitch" class="theme-switch__label">
+      <span>Dark Mode</span>
+    </label>
     <header>
       <div class="container__title">
         <h1>Social Media Dashboard</h1>
@@ -19,163 +23,164 @@
         <p>Dark Mode</p>
       </div>
     </header>
-    <main>
-      <section class="global-results">
-        <div class="card card__border-fb">
-          <div class="card__user-name">
+    <!-- <main> -->
+
+    <section class="global-results">
+      <div class="card card__border-fb">
+        <div class="card__user-name">
+          <figure><img src="./assets/images/icon-facebook.svg" alt="Facebook Logo" /></figure>
+          <p>@nathanf</p>
+        </div>
+        <p class="total-number">1987</p>
+        <p class="followers-title">FOLLOWERS</p>
+        <div class="total-percentage percentage-up">
+          <p>
+            <span><img src="./assets/images/icon-up.svg" alt="icon up" /></span> 12 Today
+          </p>
+        </div>
+      </div>
+      <div class="card card__border-tw">
+        <div class="card__user-name">
+          <figure><img src="./assets/images/icon-twitter.svg" alt="Twitter Logo" /></figure>
+          <p>@nathanf</p>
+        </div>
+        <p class="total-number">1044</p>
+        <p class="followers-title">FOLLOWERS</p>
+        <div class="total-percentage percentage-up">
+          <p>
+            <span><img src="./assets/images/icon-up.svg" alt="icon up" /></span> 99 Today
+          </p>
+        </div>
+      </div>
+      <div class="card card_border-inst">
+        <div class="card__user-name">
+          <figure><img src="./assets/images/icon-instagram.svg" alt="Instagram Logo" /></figure>
+          <p>@reaknathanf</p>
+        </div>
+        <p class="total-number">11k</p>
+        <p class="followers-title">FOLLOWERS</p>
+        <div class="total-percentage percentage-up">
+          <p>
+            <span><img src="./assets/images/icon-up.svg" alt="icon up" /></span> 1099 Today
+          </p>
+        </div>
+      </div>
+      <div class="card card__border-yt">
+        <div class="card__user-name">
+          <figure><img src="./assets/images/icon-youtube.svg" alt="YouTube Logo" /></figure>
+          <p>Nathan F.</p>
+        </div>
+        <p class="total-number">8239</p>
+        <p class="followers-title">SUBSCRIBERS</p>
+        <div class="total-percentage percentage-down">
+          <p>
+            <span><img src="./assets/images/icon-down.svg" alt="icon down" /></span> 144 Today
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="overview-results">
+      <h3>Overview - Today</h3>
+      <div class="card-2__container">
+        <div class="card-2">
+          <div class="card-2__title">
+            <p>Page Views</p>
             <figure><img src="./assets/images/icon-facebook.svg" alt="Facebook Logo" /></figure>
-            <p>@nathanf</p>
           </div>
-          <p class="total-number">1987</p>
-          <p class="followers-title">FOLLOWERS</p>
-          <div class="total-percentage percentage-up">
-            <p>
-              <span><img src="./assets/images/icon-up.svg" alt="icon up" /></span> 12 Today
+          <div class="card-2__results">
+            <p>87</p>
+            <p class="card2__total-percentage percentage-up">
+              <span><img src="./assets/images/icon-up.svg" alt="icon up" /></span>3%
             </p>
           </div>
         </div>
-        <div class="card card__border-tw">
-          <div class="card__user-name">
-            <figure><img src="./assets/images/icon-twitter.svg" alt="Twitter Logo" /></figure>
-            <p>@nathanf</p>
+        <div class="card-2">
+          <div class="card-2__title">
+            <p>Likes</p>
+            <figure><img src="./assets/images/icon-facebook.svg" alt="Facebook Logo" /></figure>
           </div>
-          <p class="total-number">1044</p>
-          <p class="followers-title">FOLLOWERS</p>
-          <div class="total-percentage percentage-up">
-            <p>
-              <span><img src="./assets/images/icon-up.svg" alt="icon up" /></span> 99 Today
+          <div class="card-2__results">
+            <p>52</p>
+            <p class="card2__total-percentage percentage-down">
+              <span><img src="./assets/images/icon-down.svg" alt="icon up" /></span>2%
             </p>
           </div>
         </div>
-        <div class="card card_border-inst">
-          <div class="card__user-name">
+        <div class="card-2">
+          <div class="card-2__title">
+            <p>Likes</p>
             <figure><img src="./assets/images/icon-instagram.svg" alt="Instagram Logo" /></figure>
-            <p>@reaknathanf</p>
           </div>
-          <p class="total-number">11k</p>
-          <p class="followers-title">FOLLOWERS</p>
-          <div class="total-percentage percentage-up">
-            <p>
-              <span><img src="./assets/images/icon-up.svg" alt="icon up" /></span> 1099 Today
+          <div class="card-2__results">
+            <p>5462</p>
+            <p class="card2__total-percentage percentage-up">
+              <span><img src="./assets/images/icon-up.svg" alt="icon up" /></span>2257%
             </p>
           </div>
         </div>
-        <div class="card card__border-yt">
-          <div class="card__user-name">
+        <div class="card-2">
+          <div class="card-2__title">
+            <p>Profile Views</p>
+            <figure><img src="./assets/images/icon-instagram.svg" alt="Instagram Logo" /></figure>
+          </div>
+          <div class="card-2__results">
+            <p>52K</p>
+            <p class="card2__total-percentage percentage-up">
+              <span><img src="./assets/images/icon-up.svg" alt="icon up" /></span>1375%
+            </p>
+          </div>
+        </div>
+        <div class="card-2">
+          <div class="card-2__title">
+            <p>Retweets</p>
+            <figure><img src="./assets/images/icon-twitter.svg" alt="Twitter Logo" /></figure>
+          </div>
+          <div class="card-2__results">
+            <p>117</p>
+            <p class="card2__total-percentage percentage-up">
+              <span><img src="./assets/images/icon-up.svg" alt="icon up" /></span>303%
+            </p>
+          </div>
+        </div>
+        <div class="card-2">
+          <div class="card-2__title">
+            <p>Likes</p>
+            <figure><img src="./assets/images/icon-twitter.svg" alt="Twitter Logo" /></figure>
+          </div>
+          <div class="card-2__results">
+            <p>507</p>
+            <p class="card2__total-percentage percentage-up">
+              <span><img src="./assets/images/icon-up.svg" alt="icon up" /></span>553%
+            </p>
+          </div>
+        </div>
+        <div class="card-2">
+          <div class="card-2__title">
+            <p>Likes</p>
             <figure><img src="./assets/images/icon-youtube.svg" alt="YouTube Logo" /></figure>
-            <p>Nathan F.</p>
           </div>
-          <p class="total-number">8239</p>
-          <p class="followers-title">SUBSCRIBERS</p>
-          <div class="total-percentage percentage-down">
-            <p>
-              <span><img src="./assets/images/icon-down.svg" alt="icon down" /></span> 144 Today
+          <div class="card-2__results">
+            <p>107</p>
+            <p class="card2__total-percentage percentage-down">
+              <span><img src="./assets/images/icon-down.svg" alt="icon up" /></span>19%
             </p>
           </div>
         </div>
-      </section>
-      <section class="overview-results">
-        <h3>Overview - Today</h3>
-        <div class="card-2__container">
-          <div class="card-2">
-            <div class="card-2__title">
-              <p>Page Views</p>
-              <figure><img src="./assets/images/icon-facebook.svg" alt="Facebook Logo" /></figure>
-            </div>
-            <div class="card-2__results">
-              <p>87</p>
-              <p class="card2__total-percentage percentage-up">
-                <span><img src="./assets/images/icon-up.svg" alt="icon up" /></span>3%
-              </p>
-            </div>
+        <div class="card-2">
+          <div class="card-2__title">
+            <p>Total Views</p>
+            <figure><img src="./assets/images/icon-youtube.svg" alt="YouTube Logo" /></figure>
           </div>
-          <div class="card-2">
-            <div class="card-2__title">
-              <p>Likes</p>
-              <figure><img src="./assets/images/icon-facebook.svg" alt="Facebook Logo" /></figure>
-            </div>
-            <div class="card-2__results">
-              <p>52</p>
-              <p class="card2__total-percentage percentage-down">
-                <span><img src="./assets/images/icon-down.svg" alt="icon up" /></span>2%
-              </p>
-            </div>
-          </div>
-          <div class="card-2">
-            <div class="card-2__title">
-              <p>Likes</p>
-              <figure><img src="./assets/images/icon-instagram.svg" alt="Instagram Logo" /></figure>
-            </div>
-            <div class="card-2__results">
-              <p>5462</p>
-              <p class="card2__total-percentage percentage-up">
-                <span><img src="./assets/images/icon-up.svg" alt="icon up" /></span>2257%
-              </p>
-            </div>
-          </div>
-          <div class="card-2">
-            <div class="card-2__title">
-              <p>Profile Views</p>
-              <figure><img src="./assets/images/icon-instagram.svg" alt="Instagram Logo" /></figure>
-            </div>
-            <div class="card-2__results">
-              <p>52K</p>
-              <p class="card2__total-percentage percentage-up">
-                <span><img src="./assets/images/icon-up.svg" alt="icon up" /></span>1375%
-              </p>
-            </div>
-          </div>
-          <div class="card-2">
-            <div class="card-2__title">
-              <p>Retweets</p>
-              <figure><img src="./assets/images/icon-twitter.svg" alt="Twitter Logo" /></figure>
-            </div>
-            <div class="card-2__results">
-              <p>117</p>
-              <p class="card2__total-percentage percentage-up">
-                <span><img src="./assets/images/icon-up.svg" alt="icon up" /></span>303%
-              </p>
-            </div>
-          </div>
-          <div class="card-2">
-            <div class="card-2__title">
-              <p>Likes</p>
-              <figure><img src="./assets/images/icon-twitter.svg" alt="Twitter Logo" /></figure>
-            </div>
-            <div class="card-2__results">
-              <p>507</p>
-              <p class="card2__total-percentage percentage-up">
-                <span><img src="./assets/images/icon-up.svg" alt="icon up" /></span>553%
-              </p>
-            </div>
-          </div>
-          <div class="card-2">
-            <div class="card-2__title">
-              <p>Likes</p>
-              <figure><img src="./assets/images/icon-youtube.svg" alt="YouTube Logo" /></figure>
-            </div>
-            <div class="card-2__results">
-              <p>107</p>
-              <p class="card2__total-percentage percentage-down">
-                <span><img src="./assets/images/icon-down.svg" alt="icon up" /></span>19%
-              </p>
-            </div>
-          </div>
-          <div class="card-2">
-            <div class="card-2__title">
-              <p>Total Views</p>
-              <figure><img src="./assets/images/icon-youtube.svg" alt="YouTube Logo" /></figure>
-            </div>
-            <div class="card-2__results">
-              <p>1407</p>
-              <p class="card2__total-percentage percentage-down">
-                <span><img src="./assets/images/icon-down.svg" alt="icon up" /></span>12%
-              </p>
-            </div>
+          <div class="card-2__results">
+            <p>1407</p>
+            <p class="card2__total-percentage percentage-down">
+              <span><img src="./assets/images/icon-down.svg" alt="icon up" /></span>12%
+            </p>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+    <!--  </main> -->
     <footer>
       <div class="attribution">
         <p>Coded by <a href="https://github.com/andresmorenoj">Andrés Moreno</a></p>
