@@ -377,3 +377,68 @@ footer .attribution {
     margin: 0 auto 25px;
   }
 }
+
+@media (min-width: 375px) and (max-width: 768px) {
+  .theme-switch__input,
+  .theme-switch__label {
+    top: 85px;
+    right: 30px;
+  }
+
+  header {
+    padding: 50px 25px 0px;
+    width: 100%;
+  }
+
+  section {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .container__theme-switch {
+    margin-top: 40px;
+    margin-right: 100px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .container__theme-switch p {
+    font-size: 1em;
+    margin: 0;
+  }
+
+  .global-results {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    width: 100%;
+    margin-top: -100px;
+    bottom: 0;
+    height: 100%;
+  }
+
+  .container__title p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .card {
+    margin: 0 auto 25px;
+    padding: 10% 0 2%;
+    max-height: 330px;
+  }
+
+  .overview-results {
+    margin-top: -25px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  .card-2__container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+
+  .card-2:nth-last-child(-n + 2) {
+    width: 45vw;
+    margin: 0 auto 25px;
+  }
+}
