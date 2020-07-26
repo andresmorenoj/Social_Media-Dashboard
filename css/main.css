@@ -45,18 +45,19 @@
 .theme-switch__input,
 .theme-switch__label {
   position: absolute;
+  top: 85px;
+  right: 160px;
   z-index: 1;
 }
 
 .theme-switch__label {
-  padding: 10px;
+  padding: 13px;
   transition: background-color 200ms ease-in-out;
   width: 50px;
   height: 5px;
   border-radius: 50px;
   text-align: center;
-  background-color: slateGray;
-  box-shadow: -4px 4px 15px inset rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(to right, var(--linear-gradient-dark));
 }
 
 .theme-switch__label span {
@@ -69,11 +70,11 @@
   position: absolute;
   top: calc(100% + 12px);
   left: -15px;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   content: "";
   border-radius: 50%;
-  background-color: lightBlue;
+  background-color: var(--white);
   transition: transform 200ms, background-color 200ms;
   box-shadow: -3px 3px 8px rgba(0, 0, 0, 0.4);
 }
@@ -141,6 +142,18 @@ h3 {
   font-size: 1.5em;
 }
 
+.container__theme-switch {
+  height: fit-content;
+  margin-top: 25px;
+  margin-right: 80px;
+  font-family: "Inter", sans-serif;
+}
+
+.container__theme-switch p {
+  color: var(--desaturated-blue-text);
+  font-weight: 600;
+}
+
 .container__title p {
   font-family: "Inter", sans-serif;
   color: var(--dark-grayish-blue-text);
@@ -170,9 +183,11 @@ h3 {
 .card__border-fb {
   border-top: 5px solid hsl(203, 89%, 53%);
 }
+
 .card__border-tw {
   border-top: 5px solid hsl(195, 100%, 50%);
 }
+
 .card_border-inst {
   border-width: 5px;
   border-style: solid;
