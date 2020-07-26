@@ -367,8 +367,11 @@ footer .attribution {
     row-gap: 30px;
   }
 
-  .card-2:nth-last-child(-n + 2) {
+  .card-2 {
     width: 45vw;
+  }
+
+  .card-2:nth-last-child(-n + 2) {
     margin: 0 auto 25px;
   }
 }
