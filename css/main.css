@@ -308,6 +308,52 @@ footer .attribution {
   color: var(--bright-red);
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .theme-switch__input,
+  .theme-switch__label {
+    top: 85px;
+    right: 60px;
+  }
+
+  header {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  section {
+    padding: 50px;
+  }
+  .global-results {
+    margin-top: -150px;
+    height: fit-content;
+  }
+  .card {
+    padding: 20px;
+  }
+
+  figure {
+    margin: 0 5px;
+  }
+
+  .card__user-name p {
+    font-size: 0.8em;
+    margin: 0;
+  }
+
+  .total-number {
+    font-size: 3em;
+    margin-top: 20px;
+  }
+
+  .card-2__title p {
+    margin: 0;
+  }
+
+  .card-2__results {
+    margin-top: 10px;
+    font-size: 0.7em;
+  }
+}
+
 @media (min-width: 375px) and (max-width: 768px) {
   .theme-switch__input,
   .theme-switch__label {
