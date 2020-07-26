@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 :root {
   /* Primary colors */
   --lime-green: hsl(163, 72%, 41%);
@@ -39,7 +40,6 @@
   --white: #fff;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 /* Button color swich */
 
 .theme-switch__input,
@@ -99,6 +99,8 @@
 .theme-switch__input:checked ~ .theme-switch__label span::after {
   transform: translateX(25px);
 }
+
+/*-----------------*/
 
 body {
   background-color: var(--white);
@@ -323,7 +325,7 @@ footer .attribution {
 
   .global-results {
     display: block;
-    top: -70px;
+    margin-top: -70px;
     bottom: 0;
     height: 100%;
   }
@@ -346,7 +348,9 @@ footer .attribution {
   }
 
   .overview-results {
-    top: 0px;
+    margin-top: -25px;
+    padding-top: 30px;
+    padding-bottom: 10px;
   }
 
   .card-2__container {
