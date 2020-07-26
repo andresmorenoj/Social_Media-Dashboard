@@ -23,6 +23,8 @@
   /* Light Theme */
   --very-pale-blue-top-BG-pattern: hsl(225, 100%, 98%);
   --light-grayish-blue-card-BG: hsl(227, 47%, 96%);
+  --light-grayish-blue-card-BG-hover: hsl(225, 26%, 91%);
+
   --dark-grayish-blue-text: hsl(228, 12%, 44%);
   --very-dark-blue-text: hsl(230, 17%, 14%);
   /*----------*/
@@ -77,6 +79,7 @@
   --light-grayish-blue-card-BG: hsl(228, 28%, 20%);
   --dark-grayish-blue-text: hsl(228, 34%, 66%);
   --very-dark-blue-text: white;
+  --light-grayish-blue-card-BG-hover: hsl(229, 25%, 26%);
   /* --dark-grayish-blue-text: white; */
   background-color: var(--very-dark-blue-BG);
 }
@@ -166,6 +169,12 @@ h3 {
   align-items: center;
   padding: 1% 0 1%;
   font-family: "Inter", sans-serif;
+}
+
+.card:hover,
+.card-2:hover {
+  background-color: var(--light-grayish-blue-card-BG-hover);
+  cursor: pointer;
 }
 
 .card__border-fb {
