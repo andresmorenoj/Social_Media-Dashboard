@@ -192,6 +192,7 @@ h3 {
   border-bottom: none;
   border-right: none;
   border-left: none;
+  border-radius: 5px;
 }
 
 .card__border-yt {
@@ -308,6 +309,67 @@ footer .attribution {
   color: var(--bright-red);
 }
 
+/* @media (min-width: 1024px) and (max-width: 1440px) {
+  body {
+    height: 1366px;
+  }
+  .theme-switch__input,
+  .theme-switch__label {
+    top: 85px;
+    right: 60px;
+  }
+
+  header {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  section {
+    padding: 50px;
+  }
+  .global-results {
+    margin-top: -150px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: -110px;
+    height: 350px;
+  }
+  .card {
+    padding: 20px;
+  }
+
+  figure {
+    margin: 0 5px;
+  }
+
+  .card__user-name p {
+    font-size: 0.8em;
+    margin: 0;
+  }
+
+  .total-number {
+    font-size: 3em;
+    margin-top: 20px;
+  }
+
+  .card-2__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .card-2__title p {
+    margin: 0;
+  }
+
+  .card-2__results {
+    margin-top: 10px;
+    font-size: 0.7em;
+  }
+} */
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .theme-switch__input,
   .theme-switch__label {
@@ -354,7 +416,7 @@ footer .attribution {
   }
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 414px) and (max-width: 768px) {
   .theme-switch__input,
   .theme-switch__label {
     top: 85px;
@@ -422,7 +484,7 @@ footer .attribution {
   }
 }
 
-@media (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 414px) {
   .theme-switch__input,
   .theme-switch__label {
     top: 160px;
