@@ -42,11 +42,11 @@
 
 .theme-switch__label {
   padding: 13px;
-  transition: background-color 200ms ease-in-out;
+  /* transition: background-color 200ms ease-in-out; */
   width: 50px;
   height: 5px;
   border-radius: 50px;
-  text-align: center;
+  /* text-align: center; */
   background-image: linear-gradient(to right, var(--linear-gradient-dark));
 }
 
@@ -69,6 +69,10 @@
   box-shadow: -3px 3px 8px rgba(0, 0, 0, 0.4);
 }
 
+.theme-switch__input:checked ~ .theme-switch__label span::after {
+  transform: translateX(22px);
+}
+
 .theme-switch__input:checked ~ header {
   --very-pale-blue-top-BG-pattern: hsl(232, 19%, 15%);
   --very-dark-blue-text: white;
@@ -86,10 +90,6 @@
 
 .theme-switch__input:checked ~ footer {
   --very-dark-blue-BG: var(--lime-green);
-}
-
-.theme-switch__input:checked ~ .theme-switch__label span::after {
-  transform: translateX(22px);
 }
 
 /*-----------------*/
@@ -151,7 +151,7 @@ h3 {
   margin-top: 7px;
 }
 
-.global-results {
+.global__results {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
@@ -186,13 +186,16 @@ h3 {
 }
 
 .card_border-inst {
-  border-width: 5px;
-  border-style: solid;
-  border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
-  border-bottom: none;
-  border-right: none;
-  border-left: none;
   border-radius: 5px;
+  border-width: 5px;
+  border: solid 5px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px var(--light-grayish-blue-card-BG) inset;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
 }
 
 .card__border-yt {
@@ -326,7 +329,7 @@ footer .attribution {
   section {
     padding: 50px;
   }
-  .global-results {
+  .global__results {
     margin-top: -150px;
     height: fit-content;
     display: grid;
@@ -384,7 +387,7 @@ footer .attribution {
   section {
     padding: 50px;
   }
-  .global-results {
+  .global__results {
     margin-top: -150px;
     height: fit-content;
   }
@@ -444,7 +447,7 @@ footer .attribution {
     margin: 0;
   }
 
-  .global-results {
+  .global__results {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 30px;
     width: 100%;
@@ -528,7 +531,7 @@ footer .attribution {
     margin: 0;
   }
 
-  .global-results {
+  .global__results {
     display: block;
     margin-top: -70px;
     bottom: 0;
